@@ -1,809 +1,373 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pei-Hao Su (Eddy)</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-<!-- Meta -->
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #fff;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
 
-<!-- Title -->
-<title>Eddy Pei-Hao Su</title>
+        h1 {
+            font-size: 2em;
+            margin-bottom: 0.5em;
+            font-weight: 600;
+        }
 
-<!-- Favicons -->
-<!--
-<link rel="shortcut icon" href="assets/img/favicon.png">
-<link rel="apple-touch-icon" href="assets/img/favicon_60x60.png">
-<link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicon_76x76.png">
-<link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicon_120x120.png">
-<link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicon_152x152.png">
--->
+        h2 {
+            font-size: 1.5em;
+            margin-top: 2em;
+            margin-bottom: 0.8em;
+            font-weight: 600;
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 0.3em;
+        }
 
-<!-- Google Web Fonts -->
-<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Roboto:400,700,500,300,100' rel='stylesheet' type='text/css'>
+        h3 {
+            font-size: 1.2em;
+            margin-top: 1.5em;
+            margin-bottom: 0.5em;
+            font-weight: 600;
+        }
 
-<!-- CSS Styles -->
-<link rel="stylesheet" href="assets/css/styles.css" />
+        p {
+            margin-bottom: 1em;
+        }
 
-<!-- CSS Template -->
-<link rel="stylesheet" href="assets/css/theme.min.css" />
-<link rel="stylesheet" href="assets/css/color/blue-beige.css" id="color" />
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
 
+        a:hover {
+            text-decoration: underline;
+        }
+
+        ul,
+        ol {
+            margin-left: 1.5em;
+            margin-bottom: 1em;
+        }
+
+        li {
+            margin-bottom: 0.5em;
+        }
+
+        .header-section {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+
+        .header-text h1 {
+            margin-bottom: 0.3em;
+        }
+
+        .social-links {
+            margin: 20px 0;
+        }
+
+        .social-links a {
+            margin-right: 15px;
+            color: #666;
+        }
+
+        .timeline-item {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 2em;
+            align-items: flex-start;
+        }
+
+        .timeline-logo {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+            flex-shrink: 0;
+            background: #f5f5f5;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        .timeline-content {
+            flex: 1;
+        }
+
+        .timeline-date {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 0.3em;
+        }
+
+        .timeline-title {
+            font-weight: 600;
+            margin-bottom: 0.3em;
+        }
+
+        .timeline-description {
+            color: #666;
+            font-size: 0.95em;
+        }
+
+        .award {
+            color: #d73a49;
+            font-weight: 600;
+        }
+
+        footer {
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            text-align: center;
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 20px 15px;
+            }
+
+            h1 {
+                font-size: 1.5em;
+            }
+
+            h2 {
+                font-size: 1.3em;
+            }
+
+            .header-section {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .timeline-item {
+                flex-direction: column;
+            }
+
+            .timeline-logo {
+                width: 60px;
+                height: 60px;
+            }
+        }
+    </style>
 </head>
 
-<body class="header-vertical">
+<body>
 
-<!-- Loader -->
-<div id="page-loader" class="bg-white"></div>
-<!-- Loader / End -->
-
-<!-- Header -->
-<header id="header" class="bg-white hidden-sm hidden-xs">
-
-    <!-- Photo -->
-    <div class="photo">
-        <img src="assets/img/photos/profile_pic_eddy.jpg" alt="...">
+    <div class="header-section">
+        <img src="assets/img/photos/profile_pic_eddy.jpg" alt="Pei-Hao Su" class="profile-img">
+        <div class="header-text">
+            <h1>Pei-Hao Su (蘇培豪)</h1>
+            <div class="social-links">
+                <a href="https://github.com/eddy0613">GitHub</a>
+                <a href="https://twitter.com/peihaosu">Twitter</a>
+                <a href="https://uk.linkedin.com/in/phs26">LinkedIn</a>
+                <a href="https://scholar.google.com/citations?user=5La6VV4AAAAJ&hl=zh-TW">Google Scholar</a>
+                <!-- <a href="assets/doc/Professional_CV_Pei-Hao_Su_2021.pdf">CV</a> -->
+            </div>
+        </div>
     </div>
 
-    <!-- Navigation -->
-    <nav id="main-menu">
-        <ul class="nav nav-vertical">
-            <li><a href="#resume"><span>About</span></a></li>
-            <li><a href="#publication"><span>Publication</span></a></li>
-            <li><a href="#talk"><span>Talk</span></a></li>
-            <li><a href="#teaching"><span>Teaching</span></a></li>
-            <li><a href="#contact"><span>Contact</span></a></li>
-        </ul>
-    </nav>
-
-    <!-- Social Media -->
-    <div class="social-media">
-        <!--
-            <strong class="text-sm">Check my social media!</strong>
-        -->
-        <ul class="list-inline margin-t-10">
-            <li><a href="https://www.facebook.com/eddy0613" class="icon icon-xs"><i class="fa fa-facebook text-muted"></i></a></li>
-            <li><a href="https://twitter.com/peihaosu" class="icon icon-xs"><i class="fa fa-twitter text-muted"></i></a></li>
-            <li><a href="https://github.com/eddy0613" class="icon icon-xs"><i class="fa fa-github text-muted"></i></a></li>
-            <li><a href="https://uk.linkedin.com/in/phs26" class="icon icon-xs"><i class="fa fa-linkedin text-muted"></i></a></li>
-        </ul>
-    </div>
-
-
-</header>
-<!-- Header / End -->
-
-<!-- Content -->
-<div id="content" class="bg-white">
-
-
-    <!-- Section - Resume -->
-    <section id="resume" class="section padding-v-60">
-
-        <!-- Content -->
-        <div class="container container-wide">
-
-            <h6 class="margin-b-50">Pei-Hao Su (蘇培豪)</h6>
-
-            <div class="row padding-lg">
-                <div class="col-md-8 col-sm-6 col-xs-12">
-
-                    <!-- Resume Box / About -->
-                    <div class="resume-box">
-
-                            I co-founded <strong><a href="https://www.poly-ai.com/" target="_blank">PolyAI</a></strong> in 2017 to develop conversational AI platform
-                            for Enterprise-Ready Voice Assistants.
-                            <br><br>
-
-                            I obtained my PhD in
-                            <strong><a href="http://mi.eng.cam.ac.uk/research/dialogue/" target="_blank">Statistical Spoken Dialogue Systems</a></strong>
-                            at <strong><a href="http://www.eng.cam.ac.uk/" target="_blank">Cambridge University</a></strong>
-                            supervised by <strong><a href="https://en.wikipedia.org/wiki/Steve_Young_(academic)" target="_blank"> Professor Steve Young</a></strong>
-                            and <strong><a href="http://mi.eng.cam.ac.uk/~mg436/" target="_blank"> Dr. Milica Ga&#353i&#263</a></strong>.
-                            <br>My PhD was funded by
-                            <strong><a href="http://www.cam.ac.uk/news/taiwan-cambridge-scholarship-launched" target="_blank">Taiwan Cambridge Scholarship</a></strong>,
-                            and a member of <strong><a href="http://www.queens.cam.ac.uk/" target="_blank">Queens' College</a></strong>.
-                            I was also fortunate to work with <a href="https://yuandong-tian.com/ target="_blank"">Dr. Yuandong Tian</a> at Facebook AI Rsearch in the last summer of my PhD.
-
-                            <br><br>
-                            My primary research interest lies mainly in the intersection of deep learning and reinforcement learning for spoken dialogue systems,
-                            aiming to set up an unified framework for language understanding/replying and a system that is capable of scaling to broad domains
-                            and directly learn from human user interaction.
-                            <br><br>
-
-                            Prior to Cambridge, I received my Bachelor and Master degree in <strong><a href="http://www.eecs.ntu.edu.tw/main.php" target="_blank">EECS</a></strong> from
-                            <strong><a href="http://www.ntu.edu.tw/english/" target="_blank">National Taiwan University</a></strong>,
-                            where I joined the Digital Speech Processing Laboratory held by <strong><a href="http://speech.ee.ntu.edu.tw/previous_version/lslNew.htm" target="_blank">Professor Lin-shan Lee</a></strong>
-                            and focused on statistical dialogue modelling for personalising pronunciation training in a dialogue game.<br><br>
-
-                            <!--
-                            Our live telephone-based spoken dialogue system is on +44 1223 858 254, providing Cambridge's restaurant infomation.
-                            <br/><br>
-                            -->
-                            Curriculum Vitae<a href="assets/doc/Professional_CV_Pei-Hao_Su_2021.pdf"> [<strong><i class="fa fa-file-pdf-o">]</strong></i></a> (last update: February 2021)
-
-                    </div>
-
-                    <div class="resume-box">
-                        <h4><strong>Awards</strong></h4>
-
-                            <UL>
-                                <li> <a href="https://www.polyai.com/polyai-awarded-company-of-the-year-2019-by-the-cambridge-computer-lab-ring/#:~:text=Eddy%20Su&text=We%20are%20happy%20to%20announce,and%20Technology%2C%20University%20of%20Cambridge." target="_blank">Company of the Year, Cambridge Computer Lab Ring, 2019</a>
-                                <li> <b>Best Student Paper Award, ACL, 2016</b>
-                                <li> W. G. Collins Endowment Fund Award, Cambridge University Engineering Dept., 2016
-                                <li> Interspeech Travel Grant, ISCA, 2015
-                                <li> Taiwan Cambridge Scholarship, Cambridge Trust & MOE of Taiwan, 2014-17
-                                <li> Government Scholarship for Studying Abroad (waived), MOE of Taiwan, 2014
-                                <li> ICASSP Travel Grant, National Science Council of Taiwan, 2013
-                                <li> Advanced Speech Technologies Scholarship, NTU EECS Department, 2012
-                                <li> Best Intern, Trend Micro Inc., 2012
-                                <li> Dean's List, NTU, 2008
-                            </UL>
-                    </div>
-
-                </div>
-                <div class="col-md-4 col-sm-6 col-xs-12">
-
-                    <!-- Resume Box / Education and Jobs -->
-                    <div class="resume-box">
-                        <h4><strong>Education</strong> &amp; jobs</h4>
-                        <div class="timeline">
-                            <!-- Single event -->
-
-                            <div class="timeline-event te-primary">
-                                <span class="event-date">Nov 2017 - </span>
-                                <span class="event-name"><a href="https://www.poly-ai.com/" target="_blank">PolyAI</a></span>
-                                <span class="event-description">Cofounder<br></span>
-                            </div>
-
-                            <div class="timeline-event te-primary">
-                                <span class="event-date">Summer 2017</span>
-                                <span class="event-name">Facebook AI Research</span>
-                                <span class="event-description">Research Intern<br>Advisor: Dr Yuandong Tian</span>
-                            </div>
-
-
-                            <!-- Single event -->
-                            <div class="timeline-event te-primary">
-                                <span class="event-date">Oct 2014 - May 2018</span>
-                                <span class="event-name">University of Cambridge</span>
-                                <span class="event-description">PhD student in Engineering<br>Advisor: Professor Steve Young</span>
-                            </div>
-                            <!-- Single event -->
-                            <div class="timeline-event te-primary">
-                                <span class="event-date">Summer 2012</span>
-                                <span class="event-name">Trend Micro Inc, Taiwan</span>
-                                <span class="event-description">Software Engineer Intern<br>Cloud storage division</span>
-                            </div>
-
-                            <!-- Single event -->
-                            <div class="timeline-event te-primary">
-                                <span class="event-date">Jan 2012 - June 2013</span>
-                                <span class="event-name">National Taiwan University</span>
-                                <span class="event-description">M.Sc. in Communication Engineering<br>Advisor: Professor Lin-shan Lee</span>
-                            </div>
-                            <!-- Single event -->
-                            <div class="timeline-event te-primary">
-                                <span class="event-date">June 2007 - Jan 2012</span>
-                                <span class="event-name">National Taiwan University</span>
-                                <span class="event-description">B.Sc. in Electrical Engineering</span>
-                            </div>
-
-
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-md-4 col-sm-6 col-xs-12">
-
-                    <!-- Resume Box / Hobbies -->
-                    <div class="resume-box">
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-
-    </section>
-    <!-- Section - Resume / End -->
-
-    <!-- Section - Publication -->
-    <section id="publication" class="section bg-grey padding-v-60">
-
-        <!-- Content -->
-        <div class="container container-wide">
-
-            <h6 class="margin-b-50">Publication</h6>
-            <h5 class="text-center">First author and main work only, see also my full list of publications in my <a href="http://scholar.google.com/citations?user=5La6VV4AAAAJ&hl=zh-TW"><u>Google Scholar page</u></a></h5>
-
-            <!-- Filters -->
-            <!--
-            <nav class="text-center">
-                <ul class="nav nav-filter nav-pills margin-b-40" data-filter-grid="#publication-list">
-                    <li class="active"><a href="#" data-filter="*">All</a></li>
-                    <li><a href="#" data-filter=".thesis">Thesis</a></li>
-                    <li><a href="#" data-filter=".preprint">Preprint</a></li>
-                    <li><a href="#" data-filter=".journal">Journal</a></li>
-                    <li><a href="#" data-filter=".conference">Conference</a></li>
-                    <li><a href="#" data-filter=".thesis">Thesis</a></li>
-                </ul>
-            </nav>
-            -->
-
-            <div id="publication-list" class="row masonry">
-                <!-- Masonry Sizer -->
-                <div class="masonry-sizer col-lg-3 col-sm-6 col-xs-12"></div>
-
-                <!-- Masonry Element -->
-
-                <div class="thesis masonry-item">
-                    <p><h4>
-                    Thesis
-                    </h4></p>
-
-                    <ol class="thesis" reversed>
-
-                        <li>
-                        <b>“Reinforcement Learning and Reward Estimation for Dialogue Policy Optimisation”</b><p>
-                            <i>PhD Thesis, University of Cambrige</i>
-                            [<a href="assets/doc/PhDThesis_Pei-Hao_Su.pdf" target="_blank">Thesis <i class="fa fa-file-pdf-o"></i></a>]
-                            [<a href="assets/doc/su_thesis_2018.bib">bib <i class="fa fa-file-text-o"></i></a>]<p>
-                            <u>Pei-Hao Su</u>
-                        </li>
-
-
-                    </ol>
-                </div>
-
-                <div class="journal masonry-item">
-                    <p><h4>
-                    Journal Article
-                    </h4></p>
-
-                    <ol class="journal" reversed>
-                        <li>
-                        <b>Sample efficient deep reinforcement learning for dialogue systems with large action spaces</b><p>
-                        <i>IEEE Transaction on Audio, Speech and Language Processing, To appear</i>
-                        <p>
-                        Gellért Weisz, Paweł Budzianowski, <u>Pei-Hao Su</u>, and Milica Gasic
-                        </li>
-
-
-                        <li>
-                        <b>“Reward estimation for dialogue policy optimisation”</b><p>
-                        <i>Computer Speech & Language, Volume 51, September 2018, Pages 24-43</i>
-                        [<a href="assets/doc/CSL_2018_SU.pdf" target="_blank">paper</a> <i class="fa fa-file-pdf-o"></i></a>]
-                            [<a href="assets/doc/sgy18.bib">bib <i class="fa fa-file-text-o"></i></a>]<p>
-                        <u>Pei-Hao Su</u>, Milica Ga&#353i&#263, and Steve Young
-                        </li>
-
-                        <li>
-                        <b>“A Recursive Dialogue Game for Personalized Computer-Aided Pronunciation Training”</b><p>
-                        <i>IEEE Transaction on Audio, Speech and Language Processing, January 2015</i>
-                        [<a href="assets/doc/TASLP_2015_SU.pdf" target="_blank">paper</a> <i class="fa fa-file-pdf-o"></i></a>]
-                            [<a href="assets/doc/SuWL15.bib">bib <i class="fa fa-file-text-o"></i></a>]<p>
-                        <u>Pei-hao Su</u>, Chuan-hsun Wu, and Lin-shan Lee
-                        </li>
-                    </ol>
-                </div>
-
-                <!--
-                -->
-                <div class="preprint masonry-item">
-                    <p><h4>
-                    Preprint
-                    </h4></p>
-
-                    <ol class="preprint" reversed>
-
-                        <li>
-                        <b>“Continuously Learning Neural Dialogue Management”</b><p>
-                            <i>arXiv preprint:1606.02689</i>
-                            [<a href="https://arxiv.org/pdf/1606.02689.pdf" target="_blank">paper <i class="fa fa-file-pdf-o"></i></a>]
-                            [<a href="assets/doc/sgmr16b.bib">bib <i class="fa fa-file-text-o"></i></a>]<p>
-                            <u>Pei-Hao Su</u>, Milica Ga&#353i&#263, Nikola Mrk&#353i&#263, Lina Rojas-Barahona, Stefan Ultes, David Vandyke, Tsung-Hsien Wen and Steve Young,<p>
-                        </li>
-
-
-                    </ol>
-                </div>
-
-                <div class="conference masonry-item">
-                    <p><h4>
-                    Conference Paper
-                    </h4></p>
-
-                    <ol class="conference" reversed>
-
-                        <li>
-                            <b>“ConveRT: Efficient and Accurate Conversational Representations from Transformers”</b>
-                            <i>EMNLP 2020</i><p>
-                            [<a href="https://www.matthen.com/assets/pdf/ConveRT_Conversational_Transformer.pdf" target="_blank">paper <i class="fa fa-file-pdf-o"></i></a>]<p>
-                            Matthew Henderson, Iñigo Casanueva, Nikola Mrkšić, Pei-Hao Su, Tsung-Hsien Wen, and Ivan Vulić
-                        </li>
-
-                        <li>
-                            <b>“A Repository of Conversational Datasets”</b>
-                            <i>ACL NLP for ConvAI workshop 2019</i><p>
-                            [<a href="https://www.matthen.com/assets/pdf/A_Repository_of_Conversational_Datasets.pdf" target="_blank">paper <i class="fa fa-file-pdf-o"></i></a>]<p>
-                            Matthew Henderson, Paweł Budzianowski, Iñigo Casanueva, Sam Coope, Daniela Gerz, Girish Kumar, Nikola Mrkšić, Georgios Spithourakis, Pei-Hao Su, Ivan Vulić, and Tsung-Hsien Wen
-                        </li>
-
-                        <li>
-                            <b>“Training Neural Response Selection for Task-Oriented Dialogue Systems”</b>
-                            <i>ACL NLP for ConvAI workshop 2019</i><p>
-                            [<a href="https://www.matthen.com/assets/pdf/Training_Neural_Response_Selection_for_Task_Oriented_Dialogue_Systems.pdf" target="_blank">paper <i class="fa fa-file-pdf-o"></i></a>]<p>
-                            Matthew Henderson, Ivan Vulić, Daniela Gerz, Iñigo Casanueva, Paweł Budzianowski, Sam Coope, Georgios Spithourakis, Tsung-Hsien Wen, Nikola Mrkšić, and Pei-Hao Su
-                        </li>
-
-                        <li>
-                            <b>“A Benchmarking Environment for Reinforcement Learning Based Task Oriented Dialogue Management”</b>
-                            <i>NIPS 2017 Symposium on Deep RL</i><p>
-                            [<a href="https://arxiv.org/pdf/1711.11023.pdf" target="_blank">paper <i class="fa fa-file-pdf-o"></i></a>]<p>
-                            Iñigo Casanueva&#42;, Paweł Budzianowski&#42;, <u>Pei-Hao Su&#42;</u>, Nikola Mrkšic, Tsung-Hsien Wen, Stefan Ultes, Lina Rojas-Barahona, Steve Young and Milica Gašic
-                        </li>
-
-                        <li>
-                            <b>“Sample-efficient Actor-Critic Reinforcement Learning with Supervised Data for Dialogue Management”</b>
-                            <i>SIGDIAL 2017 (Oral)</i><p>
-                            <u>Pei-Hao Su</u>, Paweł Budzianowski, Stefan Ultes, Milica Ga&#353i&#263 and Steve Young
-                            <!--
-                            -->
-                        </li>
-
-                        <li>
-                            <b>“On-line Active Reward Learning for Policy Optimisation in Spoken Dialogue Systems”</b>
-                            <i>ACL 2016 (Oral)</i><p>
-                            [<a href="assets/doc/sgmr16a.pdf" target="_blank">paper <i class="fa fa-file-pdf-o"></i></a>]
-                            [<a href="assets/doc/sgmr16a.bib">bib <i class="fa fa-file-text-o"></i></a>]
-                            [<a href="assets/doc/ACL_2016_final.pdf">slides <i class="fa fa-file-powerpoint-o"></i></a>]
-                            [<a href="https://www.repository.cam.ac.uk/handle/1810/256020/">data <i class="fa fa-database"></i></a>]
-                            [<a href="http://techtalks.tv/talks/on-line-active-reward-learning-for-policy-optimisation-in-spoken-dialogue-systems/63230/">video <i class="fa fa-video-camera"></i></a>]
-                            <span style="color:red;"> (Best Student Paper Award) </span><p>
-                            <u>Pei-Hao Su</u>, Milica Ga&#353i&#263, Nikola Mrk&#353i&#263, Lina Rojas-Barahona, Stefan Ultes, David Vandyke, Tsung-Hsien Wen and Steve Young
-                            <!--
-                            -->
-                        </li>
-
-
-                        <li>
-                        <b>“Multi-Domain Dialogue Success Classifiers for Policy Training”</b>
-                            <i>ASRU 2015</i><p>
-                            David Vandyke, <u>Pei-Hao Su</u>, Milica Ga&#353i&#263, Nikola Mrk&#353i&#263, Tsung-Hsien Wen and Steve Young
-                            <!--
-                            [<a href="assets/doc/svgm15.pdf" target="_blank">paper <i class="fa fa-file-pdf-o"></i></a>]
-                            [<a href="assets/doc/svgm15.bib">bib <i class="fa fa-file-text-o"></i></a>]
-                            -->
-                        </li>
-
-                        <li>
-                            <b>“Reward Shaping with Recurrent Neural Networks for Speeding up On-Line Policy Learning in Spoken Dialogue Systems”</b>
-                            <i>SIGDIAL 2015</i><p>
-                            [<a href="assets/doc/svgm15.pdf" target="_blank">paper <i class="fa fa-file-pdf-o"></i></a>]
-                            [<a href="assets/doc/svgm15.bib">bib <i class="fa fa-file-text-o"></i></a>]<p>
-                            <u>Pei-Hao Su</u>, David Vandyke, Milica Ga&#353i&#263, Nikola Mrk&#353i&#263, Tsung-Hsien Wen and Steve Young
-                        </li>
-
-                        <li>
-                            <b>“Learning from Real Users: Rating Dialogue Success with Neural Networks for Reinforcement Learning in Spoken Dialogue Systems”</b>
-                            <i>Interspeech 2015 (Oral)</i><p>
-                            [<a href="assets/doc/svgk15.pdf" target="_blank">paper <i class="fa fa-file-pdf-o"></i></a>]
-                            [<a href="assets/doc/svgk15.bib">bib <i class="fa fa-file-text-o"></i></a>]<p>
-                            <u>Pei-Hao Su</u>, David Vandyke, Milica Ga&#353i&#263, Dongho Kim, Nikola Mrk&#353i&#263, Tsung-Hsien Wen and Steve Young
-                        </li>
-
-
-                        <li>
-                            <b>“A Cloud-based Personalized Recursive Dialogue Game System for Computer-Assisted Language Learning”</b>
-                            <i>SLaTE 2013 (Oral)</i><p>
-                            [<a href="assets/doc/SigSLaTe_2013_SU.pdf" target="_blank">paper <i class="fa fa-file-pdf-o"></i></a>]
-                            [<a href="assets/doc/SuYSL13.bib">bib <i class="fa fa-file-text-o"></i></a>]<p>
-                            <u>Pei-hao Su</u>, Tien-han Yu, Ya-Yunn Su, and Lin-shan Lee
-                        </li>
-
-                        <li>
-                            <b>“NTU Chinese 2.0: A Personalized Recursive Dialogue Game for Computer-Assisted Language Learning”</b>
-                            <i>SLaTE 2013 (Demo)</i><p>
-                            [<a href="assets/doc/SigSLaTe_2013_demo_poster_SU.pdf" target="_blank">poster <i class="fa fa-file-pdf-o"></i></a>]
-                            [<a href="assets/doc/SuYSL13a.bib">bib <i class="fa fa-file-text-o"></i></a>]<p>
-                            <u>Pei-hao Su</u>, Tien-han Yu, Ya-Yunn Su, and Lin-shan Lee
-                        </li>
-
-                        <li>
-                            <b>“A Recursive Dialogue Game Framework with Optimal Policy Offering Personalized Computer-Assisted Language Learning”</b>
-                            <i>Interspeech 2013 (Oral)</i><p>
-                            [<a href="assets/doc/IS_2013_SU.pdf" target="_blank">paper <i class="fa fa-file-pdf-o"></i></a>]
-                            [<a href="assets/doc/SuWWYL13.bib">bib <i class="fa fa-file-text-o"></i></a>]<p>
-                            <u>Pei-hao Su</u>, Yow-Bang Wang, Tsung-Hsien Wen, Tien-han Yu, and Lin-shan Lee
-                        </li>
-
-                        <li>
-                            <b>“A Dialogue Game Framework with Personalized Training using Reinforcement Learning for Computer-Assisted Language Learning”</b>
-                            <i>ICASSP 2013 (Oral)</i><p>
-                            [<a href="assets/doc/ICASSP_2013_SU.pdf" target="_blank">paper <i class="fa fa-file-pdf-o"></i></a>]
-                            [<a href="assets/doc/SuWYL13.bib">bib <i class="fa fa-file-text-o"></i></a>]<p>
-                            <u>Pei-hao Su</u>, Yow-Bang Wang, Tien-han Yu, and Lin-shan Lee
-                        </li>
-
-                    </ol>
-
-                    <!--
-
-                    <p><h4>
-                    Collaborated Conference Paper
-                    </h4></p>
-
-                    <ol class="conference" reversed>
-                        <li>
-                            <b>“Multi-agent learning in multi-domain spoken dialogue systems”</b><p>
-                            <i>NIPS 2015 Workshop on Machine Learning for Spoken Language Understanding and Interaction</i>
-                            [<a href="assets/doc/gmrs15.pdf" target="_blank">paper <i class="fa fa-file-pdf-o"></i></a>]<p>
-                            Milica Ga&#353i&#263, Nikola Mrk&#353i&#263, Lina Rojas-Barahona, <u>Pei-Hao Su</u>, David Vandyke, Tsung-Hsien Wen and Steve Young
-                        </li>
-                        <li>
-                            <b>“Hyper-parameter Optimisation of Gaussian Process Reinforcement Learning for Statistical Dialogue Management”</b>
-                            <i>SigDial 2015</i><p>
-                            [<a href="assets/doc/csga15.pdf" target="_blank">paper <i class="fa fa-file-pdf-o"></i></a>]<p>
-                            Lu Chen, <u>Pei-Hao Su</u> and  Milica Ga&#353i&#263
-                        </li>
-                    </ol>
-
-                    -->
-                </div>
-
-                <!-- start thesis -->
-                <div class="thesis masonry-item">
-                    <p><h4>
-                    Thesis
-                    </h4></p>
-
-                    <ol class="thesis" reversed>
-                        <li>
-                            <b>“A Dialogue Game Framework Offering Personalized Pronunciation Training for Computer-Assisted Language Learning”</b><p>
-                            <i>Master Thesis, National Taiwan University 2013</i><p>
-                            <u>Pei-hao Su</u>
-                        </li>
-                    </ol>
-
-                </div>
-                <!-- end thesis -->
-
-            </div>
-
-        </div>
-
-    </section>
-    <!-- Section - publication / End -->
-
-    <!-- Section - Talk -->
-    <section id="talk" class="section bg-primary dark padding-v-60">
-
-        <!-- Content -->
-        <div class="container container-wide">
-
-            <h6 class="margin-b-50">Invited Talk</h6>
-
-            <h4 class="margin-b-0"><strong>Tutorial</strong></h4>
-            <p>
-                <ul>
-                    <li>
-                    <b>"Deep Learning for Conversational AI"</b>
-                    <p>
-                    <i>NAACL 2018 tutorial</i> [<a href="https://www.poly-ai.com/naacl18" target="_blank">Website<i class="fa fa-file-pdf-o"></i></a>]
-                    </li>
-                </ul>
-
-
-
-            <h4 class="margin-b-0"><strong>Industy</strong></h4>
-            <p>
-                <ul>
-                    <li>
-                    <b>"Pracitcal Approaches to Conversational AI"</b>
-                    <p>
-                    <i>ODSC 2018</i>
-                    </li>
-
-                    <li>
-                    <b>"Pracitcal Approaches to Conversational AI"</b>
-                    <p>
-                    <i>South England NLP Meetup 2018</i>
-                    </li>
-
-                    <li>
-                    <b>"Reward Estmiation for Dialogue Policy Optimisation"</b>
-                    <p>
-                    <i>General Motor Advanced Techinal Center Israel, 20 March 2017</i>
-                    </li>
-
-
-                    <li>
-                    <b>“Practical Human-in-the-loop Reinforcement Learning in Spoken Dialogue Systems”</b>
-                    <p>
-                    <i>Apple Cambridge, 12 Oct 2016</i>
-                    </li>
-
-                    <li>
-                    <b>“On-line Active Reward Learning for Policy Optimisation in Spoken Dialogue Systems”</b>
-                    <p>
-                    <i>Maluuba Research (Now Microsoft). 2 Aug 2016</i>
-                    </li>
-
-                    <li>
-                    <b>“On-line Active Reward Learning for Policy Optimisation in Spoken Dialogue Systems”</b>
-                    <p>
-                    <i>Toshiba Research Cambridge. 8 June 2016</i>
-                    </li>
-                </ul>
-
-
-            <h4 class="margin-b-0"><strong>Academia</strong></h4>
-            <p>
-                <ul>
-                    <li>
-                    <b>"Pracitcal Approaches to Conversational AI"</b>
-                    <p>
-                    <i>Cambridge LTL Group 2018</i>
-                    </li>
-
-                    <li>
-                    <b>“Reward Estimation for Dialogue Policy Optimisation”</b>
-                    <p>
-                    <i><a href= http://turing.tilda.ws/>DeepHack.Turing Summer School Hackahton, Moscow, Russia</a>. 25 July 2017</i>
-
-                    [<a href="assets/doc/talks/DeepHack_talk_25072017.pdf" target="_blank">slides <i class="fa fa-file-pdf-o"></i></a>]
-                    </li>
-
-                    <li>
-                    <b>“Beyond Siri: towards fully data-driven conversational systems”</b>
-                    <p>
-                    <i>Queens' College Cambridge Grad Talk. 20 Feb 2017</i>
-                    </li>
-
-
-                    <li>
-                    <b>“On-line Active Reward Learning for Policy Optimisation in Spoken Dialogue Systems”</b>
-                    <p>
-                    <i>Cambridge NLIP Seminar. 25 Nov 2016</i>
-                    </li>
-
-                    <li>
-                    <b>“Practical and Scalable Reinforcement Learning for Spoken Dialogue Systems”</b>
-                    <p>
-                    <i>NTU Speech Lab, Taiwan. 24 June 2016</i>
-                    </li>
-
-                    <li>
-                    <b>“Practical and Scalable Reinforcement Learning for Spoken Dialogue Systems”</b>
-                    <p>
-                    <i>Academia Sinica Taiwan. 21 June 2016</i>
-                    </li>
-
-                    <li>
-                    <b>“Transfer Learning”</b>
-                    <p>
-                    <i>Cambridge University Machine Learning Group Seminar. Feb 2015</i>, with <strong><a href="http://yingzhenli.net/home/en/" target="_blank">Yingzhen Li</a></strong>,
-                    [<a href="assets/doc/talks/transferlearning-li-and-su.pdf" target="_blank">slide <i class="fa fa-file-pdf-o"></i></a>]
-                    </li>
-                </ul>
-
-            <h4 class="margin-b-0"><strong>Conference</strong></h4>
-            <p>
-                <ul>
-                    <li>
-                    <b>“Sample-efficient Actor-Critic Reinforcement Learning with Supervised Data for Dialogue Management”</b>
-                        <p>
-                    <i>SIGDIAL 2017. Saarbruecken, Germany.</i>
-                    </li>
-
-                    <li>
-                    <b>“On-line Active Reward Learning for Policy Optimisation in Spoken Dialogue Systems”</b>
-                        <p>
-                    <i>ACL 2016. Berlin, Germany.</i>
-                    </li>
-
-                    <li>
-                        <b>“Learning from Real Users: Rating Dialogue Success with Neural Networks for Reinforcement Learning in Spoken Dialogue Systems”</b>
-                        <p>
-                        <i>Interspeech 2015. Dresden, Germany.</i>
-                    </li>
-
-                    <li>
-                    <b>“A Cloud-based Personalized Recursive Dialogue Game System for Computer-Assisted Language Learning”</b>
-                        <p>
-                        <i>SLaTE 2013. Grenoble, France.</i>
-                    </li>
-
-                    <li>
-                        <b>“A Recursive Dialogue Game Framework with Optimal Policy Offering Personalized Computer-Assisted Language Learning”</b>
-                        <p>
-                        <i>Interspeech 2013. Lyon, France.</i>
-                    </li>
-
-                    <li>
-                        <b>“A Dialogue Game Framework with Personalized Training using Reinforcement Learning for Computer-Assisted Language Learning”</b>
-                        <p>
-                        <i>ICASSP 2013. Vancouver, Canada.</i>
-                    </li>
-                </ul>
-
-        </div>
-
-    </section>
-    <!-- Section - Talk / End -->
-
-    <!-- Section - Teaching -->
-    <section id="teaching" class="section bg-grey padding-v-60">
-
-        <!-- Content -->
-        <div class="container container-wide">
-
-            <h6 class="margin-b-50">Teaching</h6>
-
-            <!-- Resume Box / Education and Jobs -->
-            <div class="resume-box">
-                <h4><strong>Supervision and Teaching Assistant</strong></h4>
-                <div class="timeline">
-
-                    <!-- Single event -->
-                    <div class="timeline-event te-primary">
-                        <span class="event-date">Spring 2017</span>
-                        <span class="event-name">MPhil Project on Sample-efficient Reinforcement Learning for Dialogue Management</span>
-                        <span class="event-description">MPhil in Machine Learning, Speech and Language Technology, Cambridge University</span>
-                    </div>
-
-                    <!-- Single event -->
-                    <div class="timeline-event te-primary">
-                        <span class="event-date">Spring 2017</span>
-                        <span class="event-name">Reinforcement Learning</span>
-                        <span class="event-description">MPhil in Machine Learning, Speech and Language Technology, Cambridge University</span>
-                    </div>
-
-
-                    <!-- Single event -->
-                    <div class="timeline-event te-primary">
-                        <span class="event-date">Fall 2016</span>
-                        <span class="event-name">Introduction to Python</span>
-                        <span class="event-description">Murray Edwards College, Cambridge University</span>
-                    </div>
-                    <!-- Single event -->
-                    <div class="timeline-event te-primary">
-                        <span class="event-date">Spring 2016</span>
-                        <span class="event-name">Statistical Dialogue Systems</span>
-                        <span class="event-description">MPhil in Machine Learning, Speech and Language Technology, Cambridge University</span>
-                    </div>
-
-                    <!-- Single event -->
-                    <div class="timeline-event te-primary">
-                        <span class="event-date">Spring & Fall 2012, Spring 2013</span>
-                        <span class="event-name">Digital Speech Processing</span>
-                        <span class="event-description">EECS Department, National Taiwan University</span>
-                    </div>
-
-                    <!-- Single event -->
-                    <div class="timeline-event te-primary">
-                        <span class="event-date">Spring & Fall 2012, Spring 2013</span>
-                        <span class="event-name">Special Project: Reinforcement Learning for Dialogue Game</span>
-                        <span class="event-description">EECS Department, National Taiwan University</span>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-    </section>
-    <!-- Section - Latest teaching / End -->
-
-    <!-- Section - Contact -->
-    <section id="contact" class="section padding-v-60 min-fullheight">
-
-        <!-- BG Map -->
-        <!--
-        <div id="google-map" class="bg-image" data-latitude="52.1984" data-longitude="0.1207"></div>
-        <div id="google-map" class="bg-image" data-latitude="52.1984" data-longitude="0.1207" data-style="light"></div>
-        -->
-
-        <!-- Contact Box -->
-        <div class="contact-box bg-secondary dark animated" data-animation="flipInY">
-            <h1>Contact Info</h1>
-            <!-- Contact List -->
-            <ul class="list-unstyled list-unstyled-icons">
-                <li><i class="inline-icon icon-before-and-after text-primary fa fa-map-marker"></i>
-                144A Clerkenwell Rd<br>London EC1R 5DF<br>United Kingdom</li>
-                <li><i class="inline-icon icon-before-and-after text-primary fa fa-comment"></i><a href="#">eddysu@poly-ai.com</a></li>
-                <li><i class="inline-icon icon-before-and-after text-primary fa fa-phone"></i>+44 20 7833 3373</li>
-            </ul>
-            <ul class="list-inline">
-                <li><a href="https://www.facebook.com/eddy0613" class="icon icon-circle icon-xs icon-facebook"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="https://twitter.com/peihaosu" class="icon icon-circle icon-xs icon-twitter"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="https://plus.google.com/111463251853991772095" class="icon icon-circle icon-xs icon-google-plus"><i class="fa fa-google-plus text-muted"></i></a></li>
-                <li><a href="https://github.com/eddy0613" class="icon icon-circle icon-xs icon-github"><i class="fa fa-github"></i></a></li>
-                <li><a href="https://uk.linkedin.com/in/phs26" class="icon icon-circle icon-xs icon-linkedin"><i class="fa fa-linkedin"></i></a></li>
-
-            </ul>
-
-        <p class="text-center">Copyright © 2018 Pei-Hao (Eddy) Su, Design: <a target="_blank" href="http://themes.suelo.pl/mi/">Mi.</a></p>
-        </div>
-
-
-    </section>
-    <!-- Section - Contact / End -->
-
-</div>
-<!-- Content / End -->
-
-<!-- Mobile Navigation -->
-<a href="#" id="mobile-nav-toggle" class="icon icon-circle icon-sm icon-primary icon-hover visible-xs visible-sm" data-target="mobile-nav">
-    <i class="ti-menu"></i>
-</a>
-<nav id="mobile-nav" class="bg-white">
-    <div class="mobile-nav-wrapper">
-        <!-- Avatar -->
-        <img src="assets/img/photos/profile_pic_eddy.jpg" alt="..." class="img-circle margin-b-30">
-        <!-- Nav -->
-        <ul class="nav nav-vertical">
-            <li><a href="#resume"><span>About</span></a></li>
-            <li><a href="#publication"><span>Publication</span></a></li>
-            <li><a href="#talk"><span>Talk</span></a></li>
-            <li><a href="#teaching"><span>Teaching</span></a></li>
-            <li><a href="#contact"><span>Contact</span></a></li>
-        </ul>
-        <!-- Social Media -->
-        <div class="margin-t-20">
-            <ul class="list-inline margin-t-10">
-                <li><a href="https://www.facebook.com/eddy0613" class="icon icon-xs"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="https://twitter.com/peihaosu" class="icon icon-xs"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="https://plus.google.com/111463251853991772095" class="icon icon-xs"><i class="fa fa-google-plus text-muted"></i></a></li>
-                <li><a href="https://github.com/eddy0613" class="icon icon-xs"><i class="fa fa-github"></i></a></li>
-                <li><a href="https://uk.linkedin.com/in/phs26" class="icon icon-xs"><i class="fa fa-linkedin"></i></a></li>
-
-
-            </ul>
+    <h2>About</h2>
+
+    <p>I co-founded <a href="https://www.poly-ai.com/" target="_blank">PolyAI</a> in 2017 to develop conversational AI
+        platform for Enterprise-Ready Voice Assistants.</p>
+
+    <p>I obtained my PhD in <a href="http://mi.eng.cam.ac.uk/research/dialogue/" target="_blank">Statistical Spoken
+            Dialogue Systems</a> at <a href="http://www.eng.cam.ac.uk/" target="_blank">Cambridge University</a>
+        supervised by <a href="https://en.wikipedia.org/wiki/Steve_Young_(academic)" target="_blank">Professor Steve
+            Young</a>. My PhD was funded by <a
+            href="https://www.cambridgetrust.org/scholarships/taiwan-cambridge-scholarship" target="_blank">Taiwan
+            Cambridge Scholarship</a>, and I was a member of <a href="http://www.queens.cam.ac.uk/"
+            target="_blank">Queens' College</a>. I was also fortunate to work with
+        <a href="https://yuandong-tian.com/" target="_blank">Dr. Yuandong Tian</a> at Facebook AI Research in the last
+        summer of my PhD.
+    </p>
+
+    <p>My primary research interest lies mainly in the intersection of deep learning and reinforcement learning for
+        spoken dialogue systems, aiming to set up an unified framework for language understanding/replying and a system
+        that is capable of scaling to broad domains and directly learn from human user interaction.</p>
+
+    <p>Prior to Cambridge, I received my Bachelor and Master degree in <a href="http://www.eecs.ntu.edu.tw/main.php"
+            target="_blank">EECS</a> from <a href="http://www.ntu.edu.tw/english/" target="_blank">National Taiwan
+            University</a>, where I joined the Digital Speech Processing Laboratory held by <a
+            href="http://speech.ee.ntu.edu.tw/previous_version/lslNew.htm" target="_blank">Professor Lin-shan Lee</a>
+        and focused on statistical dialogue modelling for personalising pronunciation training in a dialogue game.</p>
+
+    <h2>Timeline</h2>
+
+    <div class="timeline-item">
+        <img src="assets/img/logos/polyai.png" alt="PolyAI" class="timeline-logo">
+        <div class="timeline-content">
+            <div class="timeline-date">Nov 2017 - present</div>
+            <div class="timeline-title">PolyAI</div>
+            <div class="timeline-description">Cofounder</div>
         </div>
     </div>
-    <a href="#" class="mobile-nav-close icon icon-hover icon-xs icon-circle icon-primary" data-target="mobile-nav"><i class="fa fa-times"></i></a>
-</nav>
 
-<!-- Ajax Wrapper & Loader -->
-<div id="ajax-modal"></div>
-<div id="ajax-loader"><i class="fa fa-spinner fa-spin"></i></div>
+    <div class="timeline-item">
+        <img src="assets/img/logos/meta.png" alt="Facebook AI Research" class="timeline-logo">
+        <div class="timeline-content">
+            <div class="timeline-date">Summer 2017</div>
+            <div class="timeline-title">Facebook AI Research</div>
+            <div class="timeline-description">Research Intern · Advisor: Dr Yuandong Tian</div>
+        </div>
+    </div>
 
-<!-- JS Libraries -->
-<script src="assets/js/jquery-1.11.3.min.js"></script>
+    <div class="timeline-item">
+        <img src="assets/img/logos/cambridge.png" alt="University of Cambridge" class="timeline-logo">
+        <div class="timeline-content">
+            <div class="timeline-date">Oct 2014 - May 2018</div>
+            <div class="timeline-title">University of Cambridge</div>
+            <div class="timeline-description">PhD in Engineering · Advisor: Professor Steve Young</div>
+        </div>
+    </div>
 
-<!-- JS Plugins -->
-<script>
-window.paceOptions = {
-    target: '#page-loader',
-    ajax: false
-};
-</script>
-<script src="assets/js/plugins.js"></script>
+    <div class="timeline-item">
+        <img src="assets/img/logos/ntu.png" alt="National Taiwan University" class="timeline-logo">
+        <div class="timeline-content">
+            <div class="timeline-date">Jan 2012 - June 2013</div>
+            <div class="timeline-title">National Taiwan University</div>
+            <div class="timeline-description">M.Sc. in Communication Engineering · Advisor: Professor Lin-shan Lee</div>
+        </div>
+    </div>
 
-<!-- JS Core -->
-<script src="assets/js/core.min.js"></script>
+    <div class="timeline-item">
+        <img src="assets/img/logos/ntu.png" alt="National Taiwan University" class="timeline-logo">
+        <div class="timeline-content">
+            <div class="timeline-date">June 2007 - Jan 2012</div>
+            <div class="timeline-title">National Taiwan University</div>
+            <div class="timeline-description">B.Sc. in Electrical Engineering</div>
+        </div>
+    </div>
 
-<!-- Google Map API -->
+    <h2>Awards</h2>
 
-<!--
-<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
--->
+    <ul>
+        <li><a href="https://www.polyai.com/polyai-awarded-company-of-the-year-2019-by-the-cambridge-computer-lab-ring/"
+                target="_blank">Company of the Year</a>, Cambridge Computer Lab Ring, 2019</li>
+        <li><span class="award">Best Student Paper Award</span>, ACL, 2016</li>
+        <li>W. G. Collins Endowment Fund Award, Cambridge University Engineering Dept., 2016</li>
+        <li>Interspeech Travel Grant, ISCA, 2015</li>
+        <li>Taiwan Cambridge Scholarship, Cambridge Trust & MOE of Taiwan, 2014-17</li>
+        <li>Government Scholarship for Studying Abroad (waived), MOE of Taiwan, 2014</li>
+        <li>ICASSP Travel Grant, National Science Council of Taiwan, 2013</li>
+        <li>Advanced Speech Technologies Scholarship, NTU EECS Department, 2012</li>
+        <li>Best Intern, Trend Micro Inc., 2012</li>
+        <li>Dean's List, NTU, 2008</li>
+    </ul>
 
-<!-- Google Analytics: Change UA-XXXXX-X to be your site's ID. Go to http://www.google.com/analytics/ for more information. -->
-<!--
--->
-<script>
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-42402821-3']);
-    _gaq.push(['_trackPageview']);
+    <h2>Selected Publications</h2>
 
-    (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-</script>
+    <p><i>First author and main work only. See my <a
+                href="http://scholar.google.com/citations?user=5La6VV4AAAAJ&hl=zh-TW">Google Scholar page</a> for full
+            list.</i></p>
+
+    <h3>PhD Thesis</h3>
+    <ul>
+        <li><strong>"Reinforcement Learning and Reward Estimation for Dialogue Policy Optimisation"</strong>, PhD
+            Thesis, University of Cambridge. [<a href="assets/doc/PhDThesis_Pei-Hao_Su.pdf" target="_blank">PDF</a>] [<a
+                href="assets/doc/su_thesis_2018.bib">bib</a>]</li>
+    </ul>
+
+    <h3>Journal Articles</h3>
+    <ul>
+        <li><strong>"Reward estimation for dialogue policy optimisation"</strong>, Computer Speech & Language, Volume
+            51, September 2018. [<a href="assets/doc/CSL_2018_SU.pdf" target="_blank">PDF</a>] [<a
+                href="assets/doc/sgy18.bib">bib</a>]<br>
+            Pei-Hao Su, Milica Gašić, and Steve Young</li>
+
+        <li><strong>"A Recursive Dialogue Game for Personalized Computer-Aided Pronunciation Training"</strong>, IEEE
+            Transaction on Audio, Speech and Language Processing, January 2015. [<a href="assets/doc/TASLP_2015_SU.pdf"
+                target="_blank">PDF</a>] [<a href="assets/doc/SuWL15.bib">bib</a>]<br>
+            Pei-hao Su, Chuan-hsun Wu, and Lin-shan Lee</li>
+    </ul>
+
+    <h3>Conference Papers</h3>
+    <ul>
+        <li><strong>"On-line Active Reward Learning for Policy Optimisation in Spoken Dialogue Systems"</strong>, ACL
+            2016. <span class="award">(Best Student Paper Award)</span><br>
+            [<a href="assets/doc/sgmr16a.pdf" target="_blank">PDF</a>] [<a href="assets/doc/sgmr16a.bib">bib</a>] [<a
+                href="assets/doc/ACL_2016_final.pdf">slides</a>] [<a
+                href="https://www.repository.cam.ac.uk/handle/1810/256020/">data</a>] [<a
+                href="http://techtalks.tv/talks/on-line-active-reward-learning-for-policy-optimisation-in-spoken-dialogue-systems/63230/">video</a>]<br>
+            Pei-Hao Su, Milica Gašić, Nikola Mrkšić, Lina Rojas-Barahona, Stefan Ultes, David Vandyke, Tsung-Hsien Wen
+            and Steve Young</li>
+
+        <li><strong>"Reward Shaping with Recurrent Neural Networks for Speeding up On-Line Policy Learning in Spoken
+                Dialogue Systems"</strong>, SIGDIAL 2015. [<a href="assets/doc/svgm15.pdf" target="_blank">PDF</a>] [<a
+                href="assets/doc/svgm15.bib">bib</a>]<br>
+            Pei-Hao Su, David Vandyke, Milica Gašić, Nikola Mrkšić, Tsung-Hsien Wen and Steve Young</li>
+
+        <li><strong>"Learning from Real Users: Rating Dialogue Success with Neural Networks for Reinforcement Learning
+                in Spoken Dialogue Systems"</strong>, Interspeech 2015. [<a href="assets/doc/svgk15.pdf"
+                target="_blank">PDF</a>] [<a href="assets/doc/svgk15.bib">bib</a>]<br>
+            Pei-Hao Su, David Vandyke, Milica Gašić, Dongho Kim, Nikola Mrkšić, Tsung-Hsien Wen and Steve Young</li>
+    </ul>
+
+    <h2>Featured Talks</h2>
+
+    <h3>Tutorial</h3>
+    <ul>
+        <li><strong>"Deep Learning for Conversational AI"</strong>, NAACL 2018 tutorial. [<a
+                href="https://www.poly-ai.com/naacl18" target="_blank">Website</a>]</li>
+    </ul>
+
+    <h3>Selected Invited Talks</h3>
+    <ul>
+        <li>"Practical Approaches to Conversational AI", ODSC 2018</li>
+        <li>"Reward Estimation for Dialogue Policy Optimisation", DeepHack.Turing Summer School Hackathon, Moscow,
+            Russia, 2017. [<a href="assets/doc/talks/DeepHack_talk_25072017.pdf" target="_blank">slides</a>]</li>
+        <li>"Beyond Siri: towards fully data-driven conversational systems", Queens' College Cambridge Grad Talk, 2017
+        </li>
+        <li>"Practical Human-in-the-loop Reinforcement Learning in Spoken Dialogue Systems", Apple Cambridge, 2016</li>
+    </ul>
+
+    <h2>Teaching</h2>
+
+    <ul>
+        <li><strong>Spring 2017:</strong> MPhil Project Supervision on Sample-efficient Reinforcement Learning for
+            Dialogue Management, Cambridge University</li>
+        <li><strong>Spring 2017:</strong> Reinforcement Learning, MPhil in Machine Learning, Speech and Language
+            Technology, Cambridge University</li>
+        <li><strong>Fall 2016:</strong> Introduction to Python, Murray Edwards College, Cambridge University</li>
+        <li><strong>Spring 2016:</strong> Statistical Dialogue Systems, MPhil in Machine Learning, Speech and Language
+            Technology, Cambridge University</li>
+        <li><strong>2012-2013:</strong> Digital Speech Processing, EECS Department, National Taiwan University</li>
+    </ul>
+
+    <h2>Contact</h2>
+
+    <p>
+        Email: eddy@poly.ai<br>
+    </p>
+
+    <footer>
+        <p>© 2026 Pei-Hao (Eddy) Su</p>
+    </footer>
 
 </body>
 
